@@ -1,1 +1,1 @@
-# OCA_Java_Kurs Bescreibung Datei
+# OCA_Java_Kurs Beschreibung Datei
