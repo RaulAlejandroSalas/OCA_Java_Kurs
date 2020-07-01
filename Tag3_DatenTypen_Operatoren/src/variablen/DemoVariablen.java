@@ -9,7 +9,7 @@ public class DemoVariablen {
 	public static void main(String[] args) {
 		
 		/**
-		 * Boolean DateType
+		 * Boolean(Wahrheitswerte) DateType
 		 * */
 		
 		boolean b1 = true;
@@ -39,15 +39,24 @@ public class DemoVariablen {
 		 * */
 	    short short_1 = 10000; 
 	    Short short_2 = 8888;
+	    //short s3 = 88.2; //does not compile, double has to be created
+	    //Short s4 = 88.2; //does not compile, double has to be created
 	    
-		
-	    
-	    
-	    
+	    short short_3 = (short) 88.2;
+	    Short short_4 = (short) 88.2;
 	    
 	    /**
 		 * Char DateType
+		 * Einzelnezeichen
 		 * */
+	    char a = 'a';
+	    System.out.println("char c1: " + a);
+	    char charMin = Character.MIN_VALUE;
+	    System.out.println("charMin " + (int)charMin);
+	    char charMax = Character.MAX_VALUE;
+	    System.out.println("charMax " + (int)charMax);
+	    
+	    
 		
 	    
 	    
@@ -60,7 +69,8 @@ public class DemoVariablen {
 	    /**
 		 * long DateType
 		 * */
-	    
+	    long long_1 = 1000000000000000L;
+	    long l12 = 2_147_483_647;
 	    /**
 		 * double DateType
 		 * */
@@ -70,7 +80,15 @@ public class DemoVariablen {
 		 * float DateType
 		 * */
 		
+		float float_1  = 0.5F;
 		
+		
+		/**
+		 * Zeicheinketten
+		 * **/
+		
+		String string_1 = "abc";
+		System.out.println("String object value: " + string_1);
 		
 	}
 	
