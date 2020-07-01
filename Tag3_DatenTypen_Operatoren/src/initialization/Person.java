@@ -7,11 +7,10 @@ public class Person {
 	//2. in the constructor
 	//3. in the instance block initialization
 	
-
 	final int age = 28; //initialization with declaration
 	final String name;
 	final String direction;
-	
+	//final String direction2; // does not compile
 	{direction="Dresden Germany";} // initialization in the instance block
 	
 	
