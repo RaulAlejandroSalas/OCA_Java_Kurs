@@ -27,7 +27,6 @@ public class Square {
 			counter++;
 		}
 		return square;
-		
 	}
 	
 	
