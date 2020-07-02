@@ -1,4 +1,4 @@
-package aufgaben;
+package ml.salastexido;
 
 import java.util.Scanner;
 
@@ -8,9 +8,6 @@ public class CentEuroConverter {
 		return amount/100;
 	}
 	
-	
-	
-	
 	public static void main(String[] args) {
 		//read data from Terminal In
 		System.out.printf("Bitte einen Betrag in Cent eingeben: ");
@@ -19,9 +16,7 @@ public class CentEuroConverter {
 		int euro = (int) (numberInCents);
 		double cents = (numberInCents-euro);
 		System.out.println("Das macht: " + euro + " Euro " + " und " + (int)(cents*100) + " Cent\n");
-		scanner.close(); 
-		
-		
+		scanner.close();
 	}
 	
 }

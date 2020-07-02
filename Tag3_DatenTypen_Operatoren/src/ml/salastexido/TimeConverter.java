@@ -1,4 +1,4 @@
-package aufgaben;
+package ml.salastexido;
 
 import java.util.Scanner;
 
