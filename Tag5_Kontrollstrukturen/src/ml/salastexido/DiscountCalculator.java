@@ -21,8 +21,8 @@ public class DiscountCalculator {
 	}
 
 	public static void main(String[] args) {
-		int stückzahl=150;
-		double einzelPreis=60;
+		int stückzahl=100;
+		double einzelPreis=5;
 		System.out.println(calculateDiscountPreis(einzelPreis,stückzahl ));
 	}
 }
