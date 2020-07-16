@@ -1,5 +1,6 @@
 package ml.salastexido;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class BubbleSort {
@@ -17,6 +18,21 @@ public class BubbleSort {
 	        return array;
 	 }
 	 
+	 public  static void BubbleSortRecursive(int[] array, int n) {
+		
+		 if(n==1) {
+			 return ;
+		 }
+		  for (int j = 0; j < array.length-1 ; j++) {
+             if(array[j+1] < array[j]) {
+                 array[j] ^= array[j+1];
+                 array[j+1] ^= array[j];
+                 array[j] ^= array[j+1];
+             }
+         }
+		 BubbleSortRecursive(array,n-1);
+	 }
+	 
 	 private static void showArray(int[] array){
 	        for (int element:array) { System.out.print(" " +element); }
 	        System.out.println();
@@ -32,6 +48,9 @@ public class BubbleSort {
 		 showArray(array);
 		 System.out.println("Array sorted with BubbleSort");
 		 showArray(bubbleSort(array));
+		 BubbleSortRecursive(array,size);
+		 System.out.println("Sorted array : "); 
+	     System.out.println(Arrays.toString(array)); 
 		 scanner.close();	 
 	 }
 	 
