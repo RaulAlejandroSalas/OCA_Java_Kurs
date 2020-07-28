@@ -9,6 +9,7 @@ package ml.salastexido;
  */
 public class Multiplication implements IArithmetic {
 
+	
 	private final Fraction x;
 	private final Fraction y;
 	
@@ -31,4 +32,9 @@ public class Multiplication implements IArithmetic {
 		return fractionResult;
 	}
 
+	@Override
+	public String toString() {
+		return "*";
+	}
+	
 }

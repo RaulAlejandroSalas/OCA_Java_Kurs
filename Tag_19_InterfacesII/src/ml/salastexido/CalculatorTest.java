@@ -1,5 +1,8 @@
 package ml.salastexido;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class CalculatorTest {
@@ -48,19 +51,20 @@ public class CalculatorTest {
 		Fraction fraction2 = readFractionFromKeyBoard();
 		scanner.close();
 		
-//		IArithmetic addition = new Addition(fraction1,fraction2);
-//		Fraction result = addition.compute();
+		List<IArithmetic> operations = new ArrayList<>(); 
+		operations.add(new Addition(fraction1,fraction2));
+		operations.add(new Multiplication(fraction1,fraction2));
+		operations.add(new Division(fraction1,fraction2));
+		operations.add(new Substraction(fraction1,fraction2));
 		
-//		IArithmetic addition = new Multiplication(fraction1,fraction2);
-//		Fraction result = addition.compute();
+		Iterator<IArithmetic> it = operations.iterator();
+		while(it.hasNext()) {
+			IArithmetic operation = it.next();
+			showResults(fraction1,fraction2,operation.toString(),operation.compute());
+		}
+		
 
-//		IArithmetic addition = new Division(fraction1,fraction2);
-//		Fraction result = addition.compute();
-
-		IArithmetic addition = new Substraction(fraction1,fraction2);
-		Fraction result = addition.compute();
-
-		showResults(fraction1,fraction2,"+",result);
+		
 		
 	}
 }

@@ -11,7 +11,7 @@ public class Addition implements IArithmetic{
 
 	private final Fraction x;
 	private final Fraction y;
-	
+
 	/**
 	 * @param x
 	 * @param y
@@ -31,5 +31,12 @@ public class Addition implements IArithmetic{
 		fractionResult.setDenominator(x.getDenominator()*y.getDenominator());
 		return fractionResult;
 	}
+
+	@Override
+	public String toString() {
+		return "+";
+	}
+	
+	
 
 }

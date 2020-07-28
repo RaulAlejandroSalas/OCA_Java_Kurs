@@ -13,7 +13,6 @@ public class Division implements IArithmetic {
 	private final Fraction y;
 	
 	
-	
 	/**
 	 * @param x
 	 * @param y
@@ -34,5 +33,10 @@ public class Division implements IArithmetic {
 		fractionResult.setDenominator(x.getDenominator()*inverse.getDenominator());
 		return fractionResult;
 	}
+	@Override
+	public String toString() {
+		return ":";
+	}
+	
 
 }

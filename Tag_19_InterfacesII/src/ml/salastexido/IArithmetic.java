@@ -8,9 +8,5 @@ package ml.salastexido;
  *
  */
 public interface IArithmetic {
-	
 	Fraction compute();
-	default void appendChild(IArithmetic arithmetic) {}
-	default void removeChild(IArithmetic arithmetic) {}
-
 }
